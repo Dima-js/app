@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>baf</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <!-- PRELOADER -->
+    <div class="appPreloader">
+      <div class="appPreloader__wrapper">Загрузка...</div>
+    </div>
+    <!-- end PRELOADER -->
+
+    <div class="app">
+      <!-- WRAPPER -->
+      <div class="wrapper">
+        <!-- LOADER -->
+        <div class="csLoader">
+          <div class="csLoader__inner">
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+          </div>
+        </div>
+        <!-- end LOADER -->
+
+        <!-- BACK FORM PAGE -->
+        <div class="backForm">
+          <div class="backForm__prev"></div>
+          <div class="backForm__title">Авторизация</div>
+        </div>
+        <!-- end BACK FORM PAGE -->
+
+        <!-- OPEN BUTTON SIDEBAR MENU -->
+        <div class="openMenuButton"><span></span><span></span><span></span></div>
+        <!-- end OPEN BUTTON SIDEBAR MENU -->
+
+        <!-- GYM MENU BUTTON -->
+        <div class="gymMenuButton roundLargeRedButton"></div>
+        <!-- end GYM MENU BUTTON -->
+
+        <!-- LEFT SIDEBAR MENU -->
+        <div class="mainSidebarMenu">
+          <div class="mainSidebarMenu__layout"></div>
+
+          <div class="mainSidebarMenu__wrapper">
+            <div class="mainSidebarMenu__info">
+              <div class="mainSidebarMenu__photo">
+                <img src="images/profile-1.jpg" alt="Profile">
+              </div>
+
+              <div class="mainSidebarMenu__infoWrapper">
+                <div class="mainSidebarMenu__name">Евгений Кулич</div>
+                <div class="mainSidebarMenu__points"><!-- <span>3565</span>баллов (ajax load) --></div>
+              </div>
+
+              <a href="" class="mainSidebarMenu__logOut"></a>
+            </div>
+
+            <ul class="mainSidebarMenu__list">
+              <li class="mainSidebarMenu__item" data-item="info">Моя информация</li>
+              <li class="mainSidebarMenu__item" data-item="rating">Рейтинг</li>
+              <li class="mainSidebarMenu__item" data-item="badges">Бейджи</li>
+              <li class="mainSidebarMenu__item" data-item="quests">Квесты</li>
+              <li class="mainSidebarMenu__item" data-item="shop">Магазин</li>
+              <li class="mainSidebarMenu__item" data-item="edit">Редактировать данные</li>
+            </ul>
+          </div>
+        </div>
+        <!-- end LEFT SIDEBAR MENU -->
+
+        <!-- ENTRY MAIN -->
+        <div class="entryMain">
+          <a href="#" class="entryMain__logo">
+            <img src="images/logo.png" alt="Logo">
+          </a>
+
+          <div class="entryMain__form">
+            <a href="#" class="entryMain__signIn smallTransparentButton">Войти</a>
+            <a href="#" class="entryMain__signOut smallRedButton">Регистрация</a>
+          </div>
+        </div>
+        <!-- end ENTRY MAIN -->
+
+        <!-- ENTRY LOGIN -->
+        <div class="entryLogin">
+          <a href="#" class="entryLogin__logo">
+            <img src="images/logo.png" alt="Logo">
+          </a>
+
+          <div class="entryLogin__formWrapper">
+            <form action="signIn.php" class="entryLogin__form entryLoginForm">
+              <div class="entryLoginForm__input inputTextWrapper">
+                <label for="f-login-id"></label>
+                <input id="f-login-id" name="username" type="text" placeholder="Номер абонимента">
+              </div>
+
+              <div class="entryLoginForm__input inputTextWrapper">
+                <label for="f-login-password"></label>
+                <input id="f-login-password" name="password" type="password" placeholder="Пароль">
+              </div>
+
+              <input type="submit" name="login-submit" class="entryLoginForm__submit largeRedButton" value="Войти">
+
+              <div class="entryLoginForm__forgotPass">Забыли пароль?</div>
+            </form>
+
+            <form action="passRecovery.php" class="entryLogin__passRecovery passRecoveryForm">
+              <div class="passRecoveryForm__input inputTextWrapper">
+                <label for="f-rec-aboniment"></label>
+                <input id="f-rec-aboniment" type="text" name="rec-aboniment" placeholder="Номер абонента">
+              </div>
+              <input type="submit" name="submit" class="passRecoveryForm__submit largeRedButton" value="Восстановить пароль">
+            </form>
+
+            <!--<form action="newPassword.php" class="entryLogin__newPass newPasswordForm">-->
+              <!--<div class="newPasswordForm__input inputTextWrapper">-->
+                <!--<label for="f-newPass-pass"></label>-->
+                <!--<input id="f-newPass-pass" type="password" name="password" placeholder="Новый пароль">-->
+              <!--</div>-->
+
+              <!--<div class="newPasswordForm__input inputTextWrapper">-->
+                <!--<label for="f-newPass-pass2"></label>-->
+                <!--<input id="f-newPass-pass2" type="password" name="password2" placeholder="Повторить пароль">-->
+              <!--</div>-->
+
+              <!--<input type="submit" name="submit" class="newPasswordForm__submit largeRedButton" value="Восстановить пароль">-->
+            <!--</form>-->
+          </div>
+        </div>
+        <!-- end ENTRY LOGIN -->
+
+        <!-- ENTRY REGISTRATION -->
+        <div class="entryReg">
+          <form action="signOut.php" class="entryReg__form entryRegForm">
+            <div class="entryRegForm__photo editPhoto">
+              <div class="editPhoto__wrapper">
+                <label for="f-reg-image"></label>
+                <input id="f-reg-image" name="reg-image" type="file">
+              </div>
+
+              <a href="" class="editPhoto__removePhoto roundSmallRedButton"></a>
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-reg-name"></label>
+              <input id="f-reg-name" name="reg-name" type="text" placeholder="Ваше имя">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-reg-mail"></label>
+              <input id="f-reg-mail" name="reg-mail" type="text" placeholder="E-mail">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-reg-aboniment"></label>
+              <input id="f-reg-aboniment" name="reg-aboniment" type="text" placeholder="Номер абонимента">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-reg-new-pass"></label>
+              <input id="f-reg-new-pass" name="reg-new-pass" type="password" placeholder="Пароль">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-reg-confirm-pass"></label>
+              <input id="f-reg-confirm-pass" name="reg-confirm-pass" type="password" placeholder="Подтверждение пароля">
+            </div>
+
+            <input type="submit" name="reg-submit" class="entryRegForm__submit largeRedButton" value="Зарегистрироваться">
+          </form>
+        </div>
+        <!-- end ENTRY REGISTRATION -->
+
+        <!-- PROFILE INFO -->
+        <div class="profileInfo">
+          <div class="profileInfo__header">
+            <div class="profileInfo__bg"></div>
+            <div class="profileInfo__logoBg"></div>
+
+            <div class="profileInfo__headerWrapper">
+              <div class="profileInfo__quests">
+                <div class="profileInfo__questsTitle">Квестов</div>
+                <div class="profileInfo__questsNum"><!-- 152 (ajax load)--></div>
+              </div>
+
+              <div class="profileInfo__photo">
+                <!--<img src="images/profile-1.jpg" alt="Profile"> (ajax load)-->
+              </div>
+
+              <div class="profileInfo__badges">
+                <div class="profileInfo__badgesTitle">Бейджей</div>
+                <div class="profileInfo__badgesNum"><!-- 24 (ajax load) --></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profileInfo__main">
+            <div class="profileInfo__points"><!-- <span>3565</span>баллов (ajax load) --></div>
+
+            <div class="profileInfo__rating"><span><!-- 21 --></span> место в рейтинге</div>
+
+            <a href="" class="profileInfo__editButton largeRedButton">Редактировать данные</a>
+
+            <a href="" class="profileInfo__goStore largeTransparentButton">Перейти в магазин</a>
+
+            <div class="profileInfo__line horizontalDottedLine"><span></span><span></span><span></span></div>
+
+            <div class="profileInfo__social socialBlock">
+              <div class="socialBlock__title">Подключить социальные сети</div>
+
+              <ul class="socialBlock__list">
+                <li class="socialBlock__item">
+                  <a href="#"><i class="icon-fb"></i></a>
+                </li>
+
+                <li class="socialBlock__item">
+                  <a href="#"><i class="icon-tw"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end PROFILE INFO -->
+
+        <!-- PROFILE EDIT -->
+        <div class="profileEdit">
+          <form action="signOut.php" class="profileEdit__form entryRegForm">
+            <div class="entryRegForm__photo editPhoto">
+              <div class="editPhoto__wrapper">
+                <label for="f-edit-image"></label>
+                <input id="f-edit-image" name="edit-image" type="file">
+                <input type="hidden" name="edit-hidden" value="">
+              </div>
+
+              <a href="#" class="editPhoto__removePhoto roundSmallRedButton"></a>
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-edit-name"></label>
+              <input id="f-edit-name" name="edit-name" type="text" placeholder="Ваше имя">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-edit-mail"></label>
+              <input id="f-edit-mail" name="edit-mail" type="text" placeholder="E-mail">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-edit-aboniment"></label>
+              <input id="f-edit-aboniment" name="edit-aboniment" type="text" placeholder="Номер абонимента">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-edit-old-pass"></label>
+              <input id="f-edit-old-pass" name="edit-old-pass" type="password" placeholder="Старый пароль">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-edit-new-pass"></label>
+              <input id="f-edit-new-pass" name="edit-new-pass" type="password" placeholder="Новый пароль">
+            </div>
+
+            <div class="entryRegForm__input inputTextWrapper">
+              <label for="f-edit-confirm-pass"></label>
+              <input id="f-edit-confirm-pass" name="edit-confirm-pass" type="password" placeholder="Подтверждение пароля">
+            </div>
+
+            <input type="submit" name="edit-submit" class="entryRegForm__submit largeRedButton" value="Редактировать">
+          </form>
+        </div>
+        <!-- end PROFILE EDIT -->
+
+        <!-- PROFILE RATING -->
+        <div class="profileRating">
+          <ol class="profileRating__list">
+            <!-- AJAX LOAD -->
+
+            <!--<li class="profileRating__item ratingItem">-->
+              <!--<div class="ratingItem__photo">-->
+                <!--<img src="images/profile-1.jpg" alt="Profile-1">-->
+              <!--</div>-->
+
+              <!--<div class="ratingItem__info">-->
+                <!--<div class="ratingItem__name">Дмитрий Орловский</div>-->
+                <!--<div class="ratingItem__points"><span>3565</span>баллов</div>-->
+              <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="profileRating__item ratingItem" data-self>-->
+              <!--<div class="ratingItem__photo">-->
+                <!--<img src="images/profile-1.jpg" alt="Profile-1">-->
+              <!--</div>-->
+
+              <!--<div class="ratingItem__info">-->
+                <!--<div class="ratingItem__name">Дмитрий Орловский</div>-->
+                <!--<div class="ratingItem__points"><span>3565</span>баллов</div>-->
+
+                <!--<div class="ratingItem__lvlUp mediumRedButton">Подняться в рейтинге</div>-->
+              <!--</div>-->
+            <!--</li>-->
+
+            <!-- end AJAX LOAD -->
+          </ol>
+        </div>
+        <!-- end PROFILE RATING -->
+
+        <!-- PROFILE BADGES -->
+        <div class="profileBadges">
+          <ul class="profileBadges__list">
+            <!-- AJAX LOAD -->
+
+            <!--<li class="profileBadges__item profileBadgesItem">-->
+              <!--<div class="profileBadgesItem__main">-->
+                <!--<div class="profileBadgesItem__photo">-->
+                  <!--<div class="profileBadgesItem__photoWrapper">-->
+                    <!--<img src="images/profile-1.jpg" alt="Profile">-->
+                  <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="profileBadgesItem__info">-->
+                  <!--<div class="profileBadgesItem__title">Утреняя 6-ка</div>-->
+
+                  <!--<div class="profileBadgesItem__desc">Бейдж</div>-->
+                <!--</div>-->
+              <!--</div>-->
+
+              <!--<div class="profileBadgesItem__subMain">-->
+                <!--<div class="profileBadgesItem__text">-->
+                  <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+                <!--</div>-->
+
+                <!--<div class="profileBadgesItem__social socialBlock socialBlock&#45;&#45;quests">-->
+                  <!--<div class="socialBlock__title socialBlock__title&#45;&#45;quests">Поделиться:</div>-->
+
+                  <!--<ul class="socialBlock__list">-->
+                    <!--<li class="socialBlock__item">-->
+                      <!--<a href="#"><i class="icon-fb"></i></a>-->
+                    <!--</li>-->
+
+                    <!--<li class="socialBlock__item">-->
+                      <!--<a href="#"><i class="icon-tw"></i></a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>-->
+
+            <!-- end AJAX LOAD -->
+          </ul>
+        </div>
+        <!-- end PROFILE BADGES -->
+
+        <!-- ENTRANCE TO GYM -->
+        <div class="entranceToGym">
+          <a href="#" class="entranceToGym__logo">
+            <img src="images/logo.png" alt="Logo">
+          </a>
+
+          <div class="entranceToGym__content">
+            <div class="entranceToGym__title">Введите код доступа</div>
+
+            <div class="entranceToGym__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+
+          <form action="entranceToGym.php" class="entranceToGym__form entranceToGymForm">
+            <div class="entranceToGymForm__textWrapper">
+              <div class="entranceToGymForm__input inputTextWrapper">
+                <input type="text" name="f-entInput-1" maxlength="2" placeholder="XX">
+              </div>
+
+              <div class="entranceToGymForm__input inputTextWrapper">
+                <input type="text" name="f-entInput-2" maxlength="2" placeholder="XX">
+              </div>
+
+              <div class="entranceToGymForm__input inputTextWrapper">
+                <input type="text" name="f-entInput-3" maxlength="2" placeholder="XX">
+              </div>
+
+              <div class="entranceToGymForm__input inputTextWrapper">
+                <input type="text" name="f-entInput-4" maxlength="2" placeholder="XX">
+              </div>
+            </div>
+
+            <input type="submit" class="entranceToGymForm__submit largeRedButton" name="f-entInput-submit" value="Продолжить">
+          </form>
+        </div>
+        <!-- ENTRANCE TO GYM -->
+
+        <!-- GYM QUESTS -->
+        <div class="gymQuests">
+          <div class="gymQuests__choose">
+            <ul class="gymQuests__chooseList">
+              <li class="gymQuests__chooseItem" data-choose="common">Общие</li>
+              <li class="gymQuests__chooseItem" data-choose="personal">Персональные</li>
+            </ul>
+
+            <div class="gymQuests__chooseLine"></div>
+          </div>
+
+          <div class="gymQuests__lists">
+            <ul class="gymQuests__list" data-list="common">
+              <!-- AJAX LOAD -->
+
+              <!--<li class="gymQuests__item gymQuestsItem" data-id="1">-->
+                <!--<div class="gymQuestsItem__main">-->
+                  <!--<div class="gymQuestsItem__photo">-->
+                    <!--<div class="gymQuestsItem__photoWrapper">-->
+                      <!--<img src="images/profile-1.jpg" alt="Profile">-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__info">-->
+                    <!--<div class="gymQuestsItem__title">Утреняя 6-ка</div>-->
+
+                    <!--<div class="gymQuestsItem__desc"><span>200</span>баллов</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="gymQuestsItem__subMain">-->
+                  <!--<div class="gymQuestsItem__text">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__social socialBlock socialBlock&#45;&#45;quests">-->
+                    <!--<div class="socialBlock__title socialBlock__title&#45;&#45;quests">Поделиться:</div>-->
+
+                    <!--<ul class="socialBlock__list">-->
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-fb"></i></a>-->
+                      <!--</li>-->
+
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-tw"></i></a>-->
+                      <!--</li>-->
+                    <!--</ul>-->
+                  <!--</div>-->
+               <!--</div>-->
+              <!--</li>-->
+
+              <!--<li class="gymQuests__item gymQuestsItem" data-done>-->
+                <!--<div class="gymQuestsItem__main">-->
+                  <!--<div class="gymQuestsItem__photo">-->
+                    <!--<div class="gymQuestsItem__photoWrapper">-->
+                      <!--<img src="images/profile-1.jpg" alt="Profile">-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__info">-->
+                    <!--<div class="gymQuestsItem__title">Утреняя 6-ка</div>-->
+
+                    <!--<div class="gymQuestsItem__desc"><span>+ 200</span>баллов</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="gymQuestsItem__subMain">-->
+                  <!--<div class="gymQuestsItem__text">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__social socialBlock socialBlock&#45;&#45;quests">-->
+                    <!--<div class="socialBlock__title socialBlock__title&#45;&#45;quests">Поделиться:</div>-->
+
+                    <!--<ul class="socialBlock__list">-->
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-fb"></i></a>-->
+                      <!--</li>-->
+
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-tw"></i></a>-->
+                      <!--</li>-->
+                    <!--</ul>-->
+                  <!--</div>-->
+
+                  <!--<a href="#" class="gymQuestsItem__passQuest largeRedButton">Пройти квест</a>-->
+                <!--</div>-->
+              <!--</li>-->
+
+              <!-- end AJAX LOAD -->
+            </ul>
+
+            <ul class="gymQuests__list" data-list="personal">
+              <!-- AJAX LOAD -->
+
+              <!--<li class="gymQuests__item gymQuestsItem" data-id="2">-->
+                <!--<div class="gymQuestsItem__main">-->
+                  <!--<div class="gymQuestsItem__photo">-->
+                    <!--<div class="gymQuestsItem__photoWrapper">-->
+                      <!--<img src="images/profile-1.jpg" alt="Profile">-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__info">-->
+                    <!--<div class="gymQuestsItem__title">Утреняя 6-ка</div>-->
+
+                    <!--<div class="gymQuestsItem__desc"><span>200</span>баллов</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="gymQuestsItem__subMain">-->
+                  <!--<div class="gymQuestsItem__text">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__social socialBlock socialBlock&#45;&#45;quests">-->
+                    <!--<div class="socialBlock__title socialBlock__title&#45;&#45;quests">Поделиться:</div>-->
+
+                    <!--<ul class="socialBlock__list">-->
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-fb"></i></a>-->
+                      <!--</li>-->
+
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-tw"></i></a>-->
+                      <!--</li>-->
+                    <!--</ul>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</li>-->
+
+              <!--<li class="gymQuests__item gymQuestsItem" data-done>-->
+                <!--<div class="gymQuestsItem__main">-->
+                  <!--<div class="gymQuestsItem__photo">-->
+                    <!--<div class="gymQuestsItem__photoWrapper">-->
+                      <!--<img src="images/profile-1.jpg" alt="Profile">-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__info">-->
+                    <!--<div class="gymQuestsItem__title">Утреняя 6-ка</div>-->
+
+                    <!--<div class="gymQuestsItem__desc"><span>+ 200</span>баллов</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="gymQuestsItem__subMain">-->
+                  <!--<div class="gymQuestsItem__text">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+                  <!--</div>-->
+
+                  <!--<div class="gymQuestsItem__social socialBlock socialBlock&#45;&#45;quests">-->
+                    <!--<div class="socialBlock__title socialBlock__title&#45;&#45;quests">Поделиться:</div>-->
+
+                    <!--<ul class="socialBlock__list">-->
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-fb"></i></a>-->
+                      <!--</li>-->
+
+                      <!--<li class="socialBlock__item">-->
+                        <!--<a href="#"><i class="icon-tw"></i></a>-->
+                      <!--</li>-->
+                    <!--</ul>-->
+                  <!--</div>-->
+
+                  <!--<a href="#" class="gymQuestsItem__passQuest largeRedButton">Пройти квест</a>-->
+                <!--</div>-->
+              <!--</li>-->
+
+              <!-- end AJAX LOAD -->
+            </ul>
+          </div>
+        </div>
+        <!-- end GYM QUESTS -->
+
+        <!-- GYM STORE -->
+        <div class="gymStore">
+          <div class="gymStore__nameList">
+            <ul class="gymStore__nameListWrapper">
+              <!-- ajax load -->
+
+              <!--<li class="gymStore__nameItem">Кофе</li>-->
+              <!--<li class="gymStore__nameItem">Чай</li>-->
+              <!--<li class="gymStore__nameItem">Яблочный сок</li>-->
+              <!--<li class="gymStore__nameItem">Смузи айс-бленд</li>-->
+              <!--<li class="gymStore__nameItem">Чай</li>-->
+              <!--<li class="gymStore__nameItem">Яблочный сок</li>-->
+              <!--<li class="gymStore__nameItem">Кофе</li>-->
+              <!--<li class="gymStore__nameItem">Чай</li>-->
+              <!--<li class="gymStore__nameItem">Яблочный сок</li>-->
+
+              <!-- end ajax load -->
+            </ul>
+          </div>
+
+          <div class="gymStore__balance">
+            <div class="gymStore__balanceTitle">Ваш баланс:</div>
+            <div class="gymStore__balancePoints">3245 баллов.</div>
+          </div>
+
+          <ul class="gymStore__contentList">
+            <!-- ajax load -->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!--<li class="gymStore__contentItem">-->
+              <!--<img src="images/product-1.png" alt="Product">-->
+            <!--</li>-->
+
+            <!-- end ajax load -->
+          </ul>
+
+          <form action="buy.php" method="POST" class="gymStore__buyForm buyForm">
+                <div class="buyForm__top">
+                  <div class="buyForm__price">
+                    <div class="buyForm__priceTitle">Стоимость:</div>
+                    <div class="buyForm__priceValue"><span><!-- 120 (ajax load) --></span>б.</div>
+                  </div>
+
+                  <div class="buyForm__counter">
+                    <div class="buyForm__dec"></div>
+
+                    <input type="text" value="1" class="buyForm__count" name="f-buyForm-counter" readonly="readonly">
+
+                    <div class="buyForm__inc"></div>
+                  </div>
+                </div>
+
+                <div class="buyForm__desc"><!-- Lorem ipsum dolor sit am (ajax load) -->
+                </div>
+
+                <div class="buyForm__submit">
+                  <input type="submit" class="regularRedButton" name="f-buyForm-submit" value="Заказасть сейчас">
+                </div>
+              </form>
+        </div>
+        <!-- end GYM STORE -->
+
+        <!-- POP UP (add [data-active] attribute to SHOW popup) -->
+        <div class="popUp">
+          <div class="popUp__bgLayout"></div>
+
+          <div class="popUp__wrapper">
+            <div class="popUp__top"></div>
+
+            <div class="popUp__bottom">
+              <div class="popUp__title"><!-- AJAX LOAD --></div>
+              <div class="popUp__desc"><!-- AJAX LOAD --></div>
+            </div>
+
+            <a href="#" class="popUp__button regularRedButton"><!-- AJAX LOAD --></a>
+          </div>
+        </div>
+        <!-- end POP UP -->
+      </div>
+      <!-- end WRAPPER -->
+    </div>
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Кофе",
+            "image": "images/product-1.png",
+            "price": 356,
+            "description": "Lorem ipsum dolor sisectetur adipisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 2,
+            "name": "Чай",
+            "image": "images/product-1.png",
+            "price": 234,
+            "description": "Lorem ipsum dolor sisectetur adipisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 3,
+            "name": "Яблочный сок",
+            "image": "images/product-1.png",
+            "price": 757,
+            "description": "Lorem ipsum dolor sisectetur adipisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 4,
+            "name": "Смузи айс-бленд",
+            "image": "images/product-1.png",
+            "price": 325,
+            "description": "Lorem ipsum dolor sit amet, conselit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 5,
+            "name": "Чай",
+            "image": "images/product-1.png",
+            "price": 23,
+            "description": "Lorem ipsamet, consectetur adipisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 6,
+            "name": "Яблочный сок",
+            "image": "images/product-1.png",
+            "price": 78,
+            "description": "Lorem ipsum dolornsectetur adipisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 7,
+            "name": "Кофе",
+            "image": "images/product-1.png",
+            "price": 23,
+            "description": "Loremlor sit amet, consectetur adipisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 8,
+            "name": "Чай",
+            "image": "images/product-1.png",
+            "price": 57,
+            "description": "Lorem ipsum dolisicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        },
+
+        {
+            "id": 9,
+            "name": "Яблочный сок",
+            "image": "images/product-1.png",
+            "price": 325,
+            "description": "Lorem ipsum dolor sit amet, isicing elit, sed do eiusmod",
+            "updated_at": "2013-04-08T10:28:43Z"
+        }
+    ]
+}

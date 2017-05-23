@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 3,
+    "subscriber_number": 234,
+    "full_name": "Евгений Кулич",
+    "email": "blablabla@bla.com",
+    "quests": 152,
+    "image": "images/profile-1.jpg",
+    "avatar": "images/profile-1.jpg",
+    "badges": 24,
+    "points": 2332,
+    "rating": 50,
+    "updated_at": "0000-00-00 00:00:00"
+  }
+}
